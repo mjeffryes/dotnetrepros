@@ -85,7 +85,7 @@ return await Deployment.RunAsync(() =>
                             "443",
                         },
                         Name = "DNAT-HTTPS-traffic",
-                        Protocols = new[]
+                        Protocols = new Pulumi.Union<string, Pulumi.AzureNative.Network.AzureFirewallNetworkRuleProtocol>[]
                         {
                             "TCP",
                         },
@@ -108,7 +108,7 @@ return await Deployment.RunAsync(() =>
                             "80",
                         },
                         Name = "DNAT-HTTP-traffic-With-FQDN",
-                        Protocols = new[]
+                        Protocols = new Pulumi.Union<string, Pulumi.AzureNative.Network.AzureFirewallNetworkRuleProtocol>[]
                         {
                             "TCP",
                         },
@@ -147,7 +147,7 @@ return await Deployment.RunAsync(() =>
                             "8443",
                         },
                         Name = "L4-traffic",
-                        Protocols = new[]
+                        Protocols = new Pulumi.Union<string, Pulumi.AzureNative.Network.AzureFirewallNetworkRuleProtocol>[]
                         {
                             "TCP",
                         },
@@ -170,7 +170,7 @@ return await Deployment.RunAsync(() =>
                             "8443",
                         },
                         Name = "L4-traffic-with-FQDN",
-                        Protocols = new[]
+                        Protocols = new Pulumi.Union<string, Pulumi.AzureNative.Network.AzureFirewallNetworkRuleProtocol>[]
                         {
                             "TCP",
                         },
@@ -193,7 +193,7 @@ return await Deployment.RunAsync(() =>
             { "key1", "value1" },
         },
         ThreatIntelMode = "Alert",
-        Zones = new[] {},
+        Zones = new string[] {},
     });
 
 });
