@@ -1,6 +1,26 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "azure-cli@latest": {
+      "last_modified": "2023-12-03T07:45:23Z",
+      "resolved": "github:NixOS/nixpkgs/ec04772e7516b6d58d98b491e68b329b7558b14d#azure-cli",
+      "source": "devbox-search",
+      "version": "2.54.0",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/d881zs4zpqncry1p02cgpy4gnklp685i-python3.11-azure-cli-2.54.0"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/26hg969vb4rav89w2ls22a54yy5jm1sh-python3.11-azure-cli-2.54.0"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/p5sckf6hm35984v8jxbgs8iy0sw2bary-python3.11-azure-cli-2.54.0"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/kdx7pd1h4pxnsllc36cy720pp41245c3-python3.11-azure-cli-2.54.0"
+        }
+      }
+    },
     "dotnet-sdk@latest": {
       "last_modified": "2023-11-28T12:34:59Z",
       "resolved": "github:NixOS/nixpkgs/010c7296f3b19a58b206fdf7d68d75a5b0a09e9e#dotnet-sdk",
