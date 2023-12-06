@@ -1,0 +1,16 @@
+{
+  "packages": [
+    "dotnet-sdk@latest",
+  ],
+  "shell": {
+    "init_hook": [
+      "export PATH=$(pwd)/.pulumi/bin:$PATH",
+      "make",
+    ],
+    "scripts": {
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"
+      ]
+    }
+  }
+}
